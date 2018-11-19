@@ -1,3 +1,8 @@
+<label>Username</label>
+<input type="text" class="form-control" [(ngModel)]='username'>
+<p>{{ username }}</p>
+<button class="btn btn-warning" [disabled]="username === ''" (click)="username=''">Reset</button>
+<hr>
 <label>Server name</label>
 <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
 <input type="text" class="form-control" [(ngModel)]='serverName'>
